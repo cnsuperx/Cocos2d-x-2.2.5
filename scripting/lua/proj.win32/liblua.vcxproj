@@ -67,7 +67,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\zlib;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\pthread;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;$(ProjectDir)..\..\..\extensions\network;$(ProjectDir)..\..\..\external\libwebsockets\win32\include;$(ProjectDir)..\tolua;$(ProjectDir)..\luajit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\zlib;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\pthread;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;$(ProjectDir)..\..\..\extensions\network;$(ProjectDir)..\..\..\external\libwebsockets\win32\include;$(ProjectDir)..\tolua;$(ProjectDir)..\luajit\include;$(ProjectDir)..\..\..\scripting\lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions);COCOS2D_DEBUG</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -136,9 +136,23 @@ xcopy /Y /Q "$(ProjectDir)..\luajit\win32\*.*" "$(OutDir)"</Command>
     <ClCompile Include="..\cocos2dx_support\lua_cocos2dx_cocostudio_manual.cpp" />
     <ClCompile Include="..\cocos2dx_support\lua_cocos2dx_extensions_manual.cpp" />
     <ClCompile Include="..\cocos2dx_support\lua_cocos2dx_manual.cpp" />
+    <ClCompile Include="..\cocos2dx_support\lua_extensions.c" />
     <ClCompile Include="..\cocos2dx_support\Lua_extensions_CCB.cpp" />
     <ClCompile Include="..\cocos2dx_support\Lua_web_socket.cpp" />
     <ClCompile Include="..\cocos2dx_support\tolua_fix.c" />
+    <ClCompile Include="..\luasocket\auxiliar.c" />
+    <ClCompile Include="..\luasocket\buffer.c" />
+    <ClCompile Include="..\luasocket\except.c" />
+    <ClCompile Include="..\luasocket\inet.c" />
+    <ClCompile Include="..\luasocket\io.c" />
+    <ClCompile Include="..\luasocket\luasocket.c" />
+    <ClCompile Include="..\luasocket\mime.c" />
+    <ClCompile Include="..\luasocket\options.c" />
+    <ClCompile Include="..\luasocket\select.c" />
+    <ClCompile Include="..\luasocket\tcp.c" />
+    <ClCompile Include="..\luasocket\timeout.c" />
+    <ClCompile Include="..\luasocket\udp.c" />
+    <ClCompile Include="..\luasocket\wsocket.c" />
     <ClCompile Include="..\tolua\tolua_event.c" />
     <ClCompile Include="..\tolua\tolua_is.c" />
     <ClCompile Include="..\tolua\tolua_map.c" />
@@ -157,6 +171,7 @@ xcopy /Y /Q "$(ProjectDir)..\luajit\win32\*.*" "$(OutDir)"</Command>
     <ClInclude Include="..\cocos2dx_support\lua_cocos2dx_cocostudio_manual.h" />
     <ClInclude Include="..\cocos2dx_support\lua_cocos2dx_extensions_manual.h" />
     <ClInclude Include="..\cocos2dx_support\lua_cocos2dx_manual.h" />
+    <ClInclude Include="..\cocos2dx_support\lua_extensions.h" />
     <ClInclude Include="..\cocos2dx_support\Lua_extensions_CCB.h" />
     <ClInclude Include="..\cocos2dx_support\Lua_web_socket.h" />
     <ClInclude Include="..\cocos2dx_support\tolua_fix.h" />
@@ -164,6 +179,20 @@ xcopy /Y /Q "$(ProjectDir)..\luajit\win32\*.*" "$(OutDir)"</Command>
     <ClInclude Include="..\luajit\include\lua.h" />
     <ClInclude Include="..\luajit\include\luaconf.h" />
     <ClInclude Include="..\luajit\include\lualib.h" />
+    <ClInclude Include="..\luasocket\auxiliar.h" />
+    <ClInclude Include="..\luasocket\buffer.h" />
+    <ClInclude Include="..\luasocket\except.h" />
+    <ClInclude Include="..\luasocket\inet.h" />
+    <ClInclude Include="..\luasocket\io.h" />
+    <ClInclude Include="..\luasocket\luasocket.h" />
+    <ClInclude Include="..\luasocket\mime.h" />
+    <ClInclude Include="..\luasocket\options.h" />
+    <ClInclude Include="..\luasocket\select.h" />
+    <ClInclude Include="..\luasocket\socket.h" />
+    <ClInclude Include="..\luasocket\tcp.h" />
+    <ClInclude Include="..\luasocket\timeout.h" />
+    <ClInclude Include="..\luasocket\udp.h" />
+    <ClInclude Include="..\luasocket\wsocket.h" />
     <ClInclude Include="..\tolua\tolua++.h" />
     <ClInclude Include="..\tolua\tolua_event.h" />
   </ItemGroup>

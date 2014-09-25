@@ -13,6 +13,9 @@
     <Filter Include="luajit\include">
       <UniqueIdentifier>{b7025611-420a-4414-b567-f7496eec5f57}</UniqueIdentifier>
     </Filter>
+    <Filter Include="luasocket">
+      <UniqueIdentifier>{48011f64-3515-484e-aa06-fca8513267fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\tolua\tolua_event.c">
@@ -70,6 +73,48 @@
       <Filter>cocos2dx_support</Filter>
     </ClCompile>
     <ClCompile Include="..\cocos2dx_support\lua_cocos2dx_manual.cpp">
+      <Filter>cocos2dx_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\auxiliar.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\buffer.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\except.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\inet.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\io.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\luasocket.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\mime.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\options.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\select.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\tcp.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\timeout.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\udp.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\luasocket\wsocket.c">
+      <Filter>luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cocos2dx_support\lua_extensions.c">
       <Filter>cocos2dx_support</Filter>
     </ClCompile>
   </ItemGroup>
@@ -132,6 +177,51 @@
       <Filter>cocos2dx_support</Filter>
     </ClInclude>
     <ClInclude Include="..\cocos2dx_support\lua_cocos2dx_manual.h">
+      <Filter>cocos2dx_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\auxiliar.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\buffer.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\except.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\inet.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\io.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\luasocket.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\mime.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\options.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\select.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\socket.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\tcp.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\timeout.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\udp.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\luasocket\wsocket.h">
+      <Filter>luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cocos2dx_support\lua_extensions.h">
       <Filter>cocos2dx_support</Filter>
     </ClInclude>
   </ItemGroup>
