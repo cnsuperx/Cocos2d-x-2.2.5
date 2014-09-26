@@ -37,12 +37,9 @@ SubmissionInfo
 *.hps
 
 # Ignore files build by ndk and eclipse
-libs/
 bin/
 obj/
 gen/
-assets/
-local.properties
 
 # Ignore specific winrt files
 cocos2dx/platform/third_party/winrt/freetype/src
@@ -111,17 +108,3 @@ tools/jenkins_scripts/mac/android/userconf.ini
 
 # CTags
 tags
-/CocosDenshion/third_party/
-/cocos2dx/platform/third_party/
-/external/emscripten/
-/external/libwebsockets/
-/external/sqlite3/
-/scripting/javascript/spidermonkey-android/
-/scripting/javascript/spidermonkey-ios/
-/scripting/javascript/spidermonkey-win32/
-/scripting/lua/luajit/
-/tools/tojs/win32/
-/tools/tolua++/tolua++.Mac.zip
-/tools/tolua++/tolua++.rar
-/v*-deps-*.zip
-/external/version.json
