@@ -23,16 +23,33 @@ LOCAL_SRC_FILES := ../cocos2dx_support/CCLuaBridge.cpp \
           ../tolua/tolua_map.c \
           ../tolua/tolua_push.c \
           ../tolua/tolua_to.c \
+          ../luasocket/auxiliar.c \
+          ../luasocket/buffer.c \
+          ../luasocket/except.c \
+          ../luasocket/inet.c \
+          ../luasocket/io.c \
+          ../luasocket/luasocket.c \
+          ../luasocket/mime.c \
+          ../luasocket/options.c \
+          ../luasocket/select.c \
+          ../luasocket/serial.c \
+          ../luasocket/tcp.c \
+          ../luasocket/timeout.c \
+          ../luasocket/udp.c \
+          ../luasocket/unix.c \
+          ../luasocket/usocket.c \
           ../cocos2dx_support/tolua_fix.c
           
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../luajit/include \
                            $(LOCAL_PATH)/../tolua \
+                           $(LOCAL_PATH)/../luasocket \
                            $(LOCAL_PATH)/../cocos2dx_support
           
           
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/ \
                     $(LOCAL_PATH)/../luajit/include \
                     $(LOCAL_PATH)/../tolua \
+                    $(LOCAL_PATH)/../luasocket \
                     $(LOCAL_PATH)/../../../cocos2dx \
                     $(LOCAL_PATH)/../../../cocos2dx/include \
                     $(LOCAL_PATH)/../../../cocos2dx/platform \

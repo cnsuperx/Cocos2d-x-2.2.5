@@ -1,5 +1,5 @@
 
-
+#include <algorithm>
 #include "LabelReader.h"
 #include "../../../GUI/UIWidgets/UILabel.h"
 

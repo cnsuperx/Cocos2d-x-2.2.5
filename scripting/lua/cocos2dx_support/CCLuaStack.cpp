@@ -30,6 +30,9 @@ extern "C" {
 #include "lualib.h"
 #include "lauxlib.h"
 #include "tolua_fix.h"
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WIN32 || CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
+#include "lua_extensions.h"
+#endif
 }
 
 #include "LuaCocos2d.h"
@@ -119,6 +122,9 @@ bool CCLuaStack::init(void)
     };
     luaL_register(m_state, "_G", global_functions);
     tolua_CocoStudio_open(m_state);
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WIN32 || CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
+	luaopen_lua_extensions(m_state);
+#endif
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
     CCLuaObjcBridge::luaopen_luaoc(m_state);
 #endif
